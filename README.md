@@ -1,4 +1,4 @@
-# Skylism
+# Skylism.ai
 
 **The realism your skies deserve.**
 
