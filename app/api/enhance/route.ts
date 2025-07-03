@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
     // Add selected enhancements
     if (selectedEnhancements && selectedEnhancements.length > 0) {
       const enhancementPrompts = selectedEnhancements
-        .map(key => ENHANCEMENTS[key as keyof typeof ENHANCEMENTS]?.prompt)
+        .map((key: string) => ENHANCEMENTS[key as keyof typeof ENHANCEMENTS]?.prompt)
         .filter(Boolean)
         .join(', ')
       

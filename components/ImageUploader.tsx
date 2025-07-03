@@ -3,7 +3,7 @@
 import { useState, useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { createClient } from '@/lib/supabase/client'
-import { formatFileSize, PRESETS, PresetKey } from '@/lib/utils'
+import { formatFileSize } from '@/lib/utils'
 import ImageEditor from './ImageEditor'
 
 interface UploadedImage {
