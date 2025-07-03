@@ -214,24 +214,14 @@ export default function ImageUploader({ userId, credits, onCreditsUpdate }: Imag
         </div>
       )}
 
-      {/* Presets Preview */}
+      {/* Upload Preview */}
       {images.length === 0 && (
-        <div>
-          <h3 className="text-xl font-light text-white mb-6">Available Presets</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {Object.entries(PRESETS).map(([key, preset]) => (
-              <div key={key} className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                <div className="text-3xl mb-3">{preset.icon}</div>
-                <h4 className="font-light text-white mb-2">{preset.name}</h4>
-                <p className="text-sm text-white/70 mb-3 font-light">
-                  {preset.prompt.split(',')[0]}
-                </p>
-                <div className="text-xs text-white/90 font-light bg-white/10 px-2 py-1 rounded-lg inline-block">
-                  {preset.credits} credit{preset.credits !== 1 ? 's' : ''}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="text-center py-12">
+          <div className="text-6xl mb-6">🏠</div>
+          <h3 className="text-2xl font-light text-white mb-4">Ready to Transform Your Photos</h3>
+          <p className="text-white/70 font-light max-w-md mx-auto">
+            Upload your property photos and enhance them with AI-powered sky replacement and object removal.
+          </p>
         </div>
       )}
     </div>
